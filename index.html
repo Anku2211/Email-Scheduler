@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email Scheduler</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h2>Sechedule an email</h2>
+    <form action="/schedule-email" method="post" class="details-container">
+      <div style="margin-bottom: 10px; width: 100px" class="detail-1">
+        <label for="sender">From</label>
+        <input type="email" name="sender" id="sender" />
+      </div>
+      <div style="margin-bottom: 10px; width: 100px" class="detail-2">
+        <label for="receiver">To</label>
+        <input type="email" name="receiver" id="receiver" />
+      </div>
+      <div style="margin-bottom: 10px; width: 100px" class="detail-3">
+        <label for="subject">Subject</label>
+        <textarea name="subject" id="subject" cols="30" rows="3"></textarea>
+      </div>
+      <div style="margin-bottom: 10px; width: 100px" class="detail-4">
+        <label for="body">Body</label>
+        <textarea name="body" id="body" cols="30" rows="10"></textarea>
+      </div>
+
+      <button type="submit">Sechedule</button>
+    </form>
+  </body>
+</html>
